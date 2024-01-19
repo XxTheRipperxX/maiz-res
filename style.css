@@ -1,0 +1,488 @@
+body{
+    margin: 0;
+    background: #5B0017;
+
+}
+#preloader{
+    background: #5B0017 url(/images/mov-unscreen.gif) no-repeat center bottom 230px;
+    background-size: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader img{
+    width: 300px;
+    border-radius: 30px;
+}
+
+
+
+/*header section*/
+.background{
+    background-image: url(/images/body/Rectangle.png);
+    background-repeat: no-repeat;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.section-1 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-1 .container>img{
+    transform: translateX(73px);
+    transform: translateY(45px);
+}
+.section-1 .container ul{
+    display: flex;
+    gap: 100px;
+}
+.section-1 .container ul li{
+    list-style: none;
+}
+.section-1 .container ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Cotoris;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    position: relative;
+    color:  #FFF;
+}
+
+.section-1 .container ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #FFF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.section-1 .container ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.section-1 .container .book{
+    display: flex;
+    align-items: center;
+}
+.section-1 .container .book a{
+    text-decoration: none;
+    padding: 18px 35px;
+    background-color: #CC9D2F;
+    color: #5B0017;
+    text-align: center;
+    font-family: CotorisBold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*end header section*/
+.section-2{
+    margin-top: 100px;
+}
+.section-2 .container{
+    display: flex;
+    position: relative;
+}
+.section-2 .container h1{
+    color: #FFF;
+    font-family: CotorisBold;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130px;
+    background-color: #5b0017a5;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 0;
+    transform: translateY(-30px);
+    margin-bottom: 0;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    white-space: nowrap; /* Keeps the content on a single line */
+   
+    letter-spacing: .30px; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.section-2 .container p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 50px;
+    
+}
+.section-2 .container .images img{
+    position: absolute;
+    z-index: -1;
+    left:570px;
+
+}
+.section-2 .container .images img:nth-of-type(2){
+    transform: translateX(740px);
+    top: -30px;
+}
+
+.section-2 .container .text a{
+    text-decoration: none;
+    color: #CC9D2F;
+    text-align: center;
+    font-family: CotorisBold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #CC9D2F;
+    padding: 17px 35px;
+    transition: 0.3s;
+}
+.section-2 .container .text a:hover{
+    color: white;
+    background-color: #CC9D2F;
+}
+
+.section-2 .container .text img{
+    margin-top: 60px;
+    display: block;
+}
+
+
+/*section-3*/
+.section-3{
+    margin-top: 100px;
+    padding-top: 100px;
+    background: url(/images/body/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    
+    background-size:contain;
+}
+.section-3 .container{
+    display: flex;
+    gap: 40px;
+}
+.section-3 .container .images{
+    position: relative;
+}
+body > div.section-3 > div > div.images > img:nth-child(2){
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+
+}
+body > div.section-3 > div > div.images > img:nth-child(1){
+    position: relative;
+}
+
+.section-3 .container .colum h2{
+    color: #FFF;
+font-family: CotorisBold;
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+.section-3 .container .colum p{
+    color: #FFF;
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-bottom: 80px;
+} 
+.section-3 .container .colum a{
+    text-decoration: none;
+    background-color:#CC9D2F;
+    color: white;
+    font-size: 20px;
+    padding: 17px 33px;
+    position: relative;
+}
+.section-3 .container .colum a::before{
+    position: absolute;
+    content:"";
+    width: 151.73px;
+    height: 55.6px;
+    border: 0.5px solid #CC9D2F;
+    z-index: -1;
+    right: 3px;
+    top:3px ;
+}
+.section-3 .container .colum .images{
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+.section-3 .container .colum hr{
+    margin-top: 65px;
+    width:400px;
+    transform: translateX(-220px);
+    background-color: #CC9D2F;
+    color: #CC9D2F;
+}
+body > div.section-3 > div > div.colum > img{
+    display: block;
+    margin-left: auto;
+    transform: translateY(-70px);
+}
+
+
+
+/*section-4*/
+.section-4{
+    margin-top: 200px;
+}
+.section-4 .container .colum-1 .holder{
+    margin-top: 75px;
+    margin-right: 65px;
+    margin-left: 133px;
+}
+.section-4 .container{
+    display: flex;
+    justify-content: center;
+}
+.section-4 .container .colum-1{
+    position: relative;
+    width: 561.022px;
+    height: 555.687px;
+    text-align: center;
+    background: #CC9D2F;
+}
+body > div.section-4 > div > div.colum-1 > div > img{
+    position: absolute;
+    left:130px;
+}
+.section-4 .container .colum-1 .holder > p{
+    position: relative;
+    color: #243054;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39.95px;
+}
+.section-4 .container .colum-1 .box{
+    transform: translateY(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00646D; 
+}
+body > div.section-4 > div > div.colum-1 > div > div > div.photo > hr{
+    margin-bottom: 0;
+}
+.section-4 .container .colum-1 .box h4{
+    color: #243054;
+    font-family: sans-serif;
+    font-size: 13.317px;
+    font-weight: bold;
+    margin-bottom: 0;
+    opacity: 0.87;
+}
+.section-4 .container .colum-1 .box p{
+    color: #243054;
+    font-family: Poppins;
+    font-size: 9.988px;
+    font-style: normal;
+    font-weight: bold;
+    opacity: 0.6;
+
+}
+
+body > div.section-4 > div > div.colum-1 > img{
+    position: absolute ;
+    bottom: 30px;
+    left: 0;
+}
+.section-4 .container .colum-2{
+    position: relative;
+}
+body > div.section-4 > div > div.colum-2 > img:nth-child(1){
+    position: relative;
+}
+body > div.section-4 > div > div.colum-2 > img:nth-child(2){
+    position:absolute;
+    top: 45%;
+    left: 50%;
+
+}
+/*section-5*/
+.section-5{
+    position: relative;
+    margin-top: 100px;
+    height: 871.17px;
+    background:url(/images/section-5/image\ 4\ \(1\).png);
+    background-blend-mode: overlay, normal, normal;
+    background-size: cover;
+}
+body > div.section-5 > img:nth-child(4){
+    position: absolute;
+    bottom:0 ;
+    right:0;
+}
+body > div.section-5 > img:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 526px;
+}
+body > div.section-5 > div > img{
+    animation: rotate 2s linear infinite;
+    transform-style: preserve-3d;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.section-5 .container{
+    margin-top: 80px;
+    text-align: center;
+}
+.section-5 .container h1{
+    color: #FFF;
+    text-align: center;
+    font-family: CotorisBold;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+body > div.section-5 > div > a{
+    text-decoration: none;
+    background-color:#CC9D2F;
+    color: white;
+    font-size: 20px;
+    padding: 17px 33px;
+    position: relative;
+}
+.section-5 .container a::before{
+    position: absolute;
+    content:"";
+    width: 151.73px;
+    height: 55.6px;
+    border: 0.5px solid #CC9D2F;
+    z-index: 1;
+    right: 3px;
+    top:3px ;   
+    width:  146.54px;
+    height: 55.6px;
+}
+
+/*footer*/
+footer .section-6{
+    width: 100%;
+    background-color: #CC9D2F;
+}
+footer .section-6 .container{
+    text-align: center;
+}
+footer .section-6 .container ul{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 79.36px;
+}
+footer .section-6 .container ul li{
+    list-style: none;
+}
+footer .section-6 .container ul li a{
+    text-decoration: none;
+    color: #5B0017;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.441px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    }
+    footer .section-6 .container ul li a::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:  #5B0017;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    footer .section-6 .container ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+    body > footer > div > div.container > img{
+        margin-top: 54px;
+        margin-bottom: 59.25px;
+    }
+    footer .section-6 .box{
+        margin: 00px 100px;
+        display: flex;
+        align-items: center;
+
+    }
+    footer .section-6 .box .sc{
+        margin: auto;
+    }
+    footer .section-6 .box .sc img{
+        margin: 00px 10px;
+        transition: 0.3s;
+    }
+    footer .section-6 .box .sc img:hover{
+        transform: scale(1.5);
+    }
+
+    body > footer > div > hr{
+    
+        height: 2px;
+        opacity: 0.15;
+        background: #243054;
+    }
+    body > footer > div > div.container > img{
+        transition: 0.3s;
+    }
+    body > footer > div > div.container > img:hover{
+        transform: scale(1.2);
+
+
+    }
