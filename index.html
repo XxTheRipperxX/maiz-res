@@ -9,12 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Caveat&family=Kanit:wght@200&family=Open+Sans&family=Oswald&family=Outfit:wght@300;500&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <body>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <img src="/images/footer/logo (2).svg" alt="">
-    </div>
+    </div> -->
     <div class="background">
             <div class="section-1">
-                <div class="container">
+                <div class="container ">
                     <img src="/images/header images/logo.svg" width="100.717px" height="154.069px" alt="">
                     <ul>
                         <li><a href="#">About</a></li>
@@ -29,8 +29,8 @@
                 </div>
             </div>
         <!--end header section-->
-        <div class="section-2">
-            <div class="container">
+        <div class="section-2 ">
+            <div class="container   ">
                 <div class="text">
                     <h1>Taste the authentic <br> Saudi cuisine</h1>
                     <p>Among the best Saudi chefs in the world, <br> serving you something beyond flavor. </p>
@@ -44,8 +44,8 @@
             </div>
         </div>
     </div>    
-    <div class="section-3">
-        <div class="container">
+    <div class="section-3 ">
+        <div class="container reveal">
             <div class="images">
                 <img width="404.84px" height="621.052 px" src="/images/section-3/image 3 (1).png" alt="">
                 <img src="/images/section-3/triangle.svg" alt="">
@@ -67,8 +67,8 @@
         </div>
     </div>
     <!--section-4-->
-    <div class="section-4">
-        <div class="container">
+    <div class="section-4 ">
+        <div class="container reveal">
             <div class="colum-1">
                 <div class="holder">
                     <img src="/images/section-4/“.png" alt="">
@@ -94,12 +94,12 @@
         </div>
     </div>
     <!--section-5-->
-    <div class="section-5">
+    <div class="section-5 ">
         <img src="/images/section-5/Vector (Stroke)1.png" alt="">
         <img src="/images/section-5/Vector (Stroke)1.png" alt="">
         <img src="/images/section-5/Vector (Stroke).png" alt="">
         <img src="/images/section-5/Vector (Stroke).png" alt="">
-        <div class="container">
+        <div class="container reveal">
             <img src="/images/section-5/Vector (2).svg" alt="">
             <h1>A unique menu that reflects the <br> true essence of the Saudi cuisine</h1>
             <a href="#">Our menu</a>
@@ -108,8 +108,8 @@
 
 
         <footer>
-            <div class="section-6">
-                <div class="container">
+            <div class="section-6 ">
+                <div class="container reveal">
                     <img src="/images/footer/logo (2).svg" alt="">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -135,10 +135,32 @@
         
         
         <script>
-            var loader = document.getElementById("preloader");
-            window.addEventListener("load" , function(){
-                loader.style.display = "none";
-            })
+            // var loader = document.getElementById("preloader");
+            // window.addEventListener("load" , function(){
+            //     loader.style.display = "none";
+            // }); 
+
+            window.addEventListener('scroll' , reveal);
+            function reveal () {
+                var reveals = document.querySelectorAll('.reveal');
+
+                for (var i = 0; i < reveals.length; i++){
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint =150;
+
+                    if(revealtop < windowheight - revealpoint) {
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+
+
         </script>
+
+
 </body>
 </html>

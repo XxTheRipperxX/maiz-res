@@ -18,6 +18,16 @@ body{
     width: 300px;
     border-radius: 30px;
 }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity:0 ;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 
@@ -28,7 +38,7 @@ body{
 }
 .container{
     width: 90%;
-    margin: auto;
+    margin:  auto;
 }
 .section-1 .container{
     display: flex;
@@ -91,6 +101,10 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: 0.3s;
+}
+.section-1 .container .book a:hover{
+    color: white;
 }
 /*end header section*/
 .section-2{
@@ -238,7 +252,7 @@ margin-bottom: 80px;
     width: 151.73px;
     height: 55.6px;
     border: 0.5px solid #CC9D2F;
-    z-index: -1;
+    /* z-index: -1; */
     right: 3px;
     top:3px ;
 }
@@ -399,7 +413,7 @@ body > div.section-5 > div > a{
     width: 151.73px;
     height: 55.6px;
     border: 0.5px solid #CC9D2F;
-    z-index: 1;
+    /* z-index: 1; */
     right: 3px;
     top:3px ;   
     width:  146.54px;
